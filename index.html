@@ -6,7 +6,7 @@
 <title>Abhishek Verma | AI Engineer, RL Environments and LLM Evaluation</title>
 <meta name="description" content="Abhishek Verma is an AI Engineer in Gurugram, India. He builds RL environments and LLM evaluation pipelines for coding agents, and has merged open source fixes in TransformerLens, SAELens, nnsight, delphi and tox.">
 <meta name="author" content="Abhishek Verma">
-<meta name="keywords" content="Abhishek Verma, AI Engineer, RL environments, LLM evaluation, reinforcement learning, SWE-bench, open source, Python, Docker, AWS, TransformerLens, SAELens, Gymnasium, PettingZoo, Minigrid, Gurugram">
+<meta name="keywords" content="Abhishek Verma, AI Engineer, RL environments, LLM evaluation, reinforcement learning, SWE-bench, open source, Python, Docker, AWS, TransformerLens, SAELens, Gymnasium, PettingZoo, Minigrid, pytest, pluggy, filelock, Gurugram">
 <link rel="canonical" href="https://abhishekcpp007.github.io/">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="s-cOhSr43MuHsZpBq8Mt10VVl8SUnAKslSo9slNo3R4" />
@@ -104,6 +104,11 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>Gymnasium</td><td><a href="https://github.com/Farama-Foundation/Gymnasium/pull/1827">#1827</a></td><td><code>MaxAndSkipObservation</code> returned the previous step's frames when an episode ended mid-skip.</td><td class="s o">In review</td></tr>
       <tr><td>circuit-tracer</td><td><a href="https://github.com/decoderesearch/circuit-tracer/pull/124">#124</a></td><td>A bare <code>squeeze()</code> broke single-token prompts and let real batches through unchecked.</td><td class="s o">In review</td></tr>
       <tr><td>BrowserGym</td><td><a href="https://github.com/ServiceNow/BrowserGym/pull/421">#421</a></td><td><code>hide_bid_if_invisible</code> crashed with an AttributeError instead of the clear error its sibling flags give.</td><td class="s o">In review</td></tr>
+      <tr><td>pluggy (pytest)</td><td><a href="https://github.com/pytest-dev/pluggy/pull/827">#827</a></td><td>A 1.7.0 regression let <code>subset_hook_caller</code> call plugins it was told to exclude.</td><td class="s o">In review</td></tr>
+      <tr><td>filelock</td><td><a href="https://github.com/tox-dev/filelock/pull/908">#908</a></td><td>Read-write locks took <code>blocking=0</code> as blocking and waited the full timeout.</td><td class="s o">In review</td></tr>
+      <tr><td>Gymnasium-Robotics</td><td><a href="https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/362">#362</a></td><td><code>get_joint_qvel</code> read 4 velocities for a MuJoCo ball joint instead of 3.</td><td class="s o">In review</td></tr>
+      <tr><td>Shimmy</td><td><a href="https://github.com/Farama-Foundation/Shimmy/pull/169">#169</a></td><td>OpenSpiel <code>reset()</code> dropped a game's parameters, crashing or silently changing the game.</td><td class="s o">In review</td></tr>
+      <tr><td>platformdirs</td><td><a href="https://github.com/tox-dev/platformdirs/pull/686">#686</a></td><td>Media and fonts functions couldn't take <code>use_site_for_root</code> like their properties.</td><td class="s o">In review</td></tr>
       <tr><td>TransformerLens</td><td><a href="https://github.com/TransformerLensOrg/TransformerLens/pull/1976">#1976</a></td><td><code>stack_head_results</code> silently returned the wrong residual stream for a negative layer.</td><td class="s o">In review</td></tr>
       <tr><td>Minigrid</td><td><a href="https://github.com/Farama-Foundation/Minigrid/pull/551">#551</a></td><td><code>MissionSpace</code> rejected valid missions when two placeholders shared one character.</td><td class="s o">In review</td></tr>
       <tr><td>PettingZoo</td><td><a href="https://github.com/Farama-Foundation/PettingZoo/pull/1538">#1538</a></td><td>Random rollout helpers ignored an action mask passed in <code>info</code> and took illegal actions.</td><td class="s o">In review</td></tr>
