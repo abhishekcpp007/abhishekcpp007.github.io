@@ -6,7 +6,7 @@
 <title>Abhishek Verma | AI Engineer, RL Environments and LLM Evaluation</title>
 <meta name="description" content="Abhishek Verma is an AI Engineer in Gurugram, India. He builds RL environments and LLM evaluation pipelines for coding agents, and has merged open source fixes in TransformerLens, SAELens, nnsight, delphi and tox.">
 <meta name="author" content="Abhishek Verma">
-<meta name="keywords" content="Abhishek Verma, AI Engineer, RL environments, LLM evaluation, reinforcement learning, SWE-bench, open source, Python, Docker, AWS, TransformerLens, SAELens, Gymnasium, PettingZoo, Minigrid, pytest, pluggy, filelock, Gurugram">
+<meta name="keywords" content="Abhishek Verma, AI Engineer, Backend Developer, RL environments, LLM evaluation, REST API, FastAPI, API integration, reinforcement learning, SWE-bench, open source, Python, Docker, AWS, Redis, PostgreSQL, TransformerLens, SAELens, Gymnasium, PettingZoo, Minigrid, pytest, pluggy, filelock, Gurugram">
 <link rel="canonical" href="https://abhishekcpp007.github.io/">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="s-cOhSr43MuHsZpBq8Mt10VVl8SUnAKslSo9slNo3R4" />
@@ -129,6 +129,17 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
     <li><a href="https://github.com/abhishekcpp007/gauntlet-repo2env">gauntlet-repo2env</a>: turns a repo into Docker env images and SWE-style tasks</li>
     <li><a href="https://github.com/abhishekcpp007/gauntlet-sandbox">gauntlet-sandbox</a> and <a href="https://github.com/abhishekcpp007/gauntlet-timemachine">gauntlet-timemachine</a>: record, replay and diff agent trajectories</li>
     <li><a href="https://github.com/abhishekcpp007/gauntlet-arena">gauntlet-arena</a>: a FastAPI app where a human and an AI agent race on the same task</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Backend work: a policy and claims REST API</h2>
+  <p><a href="https://github.com/abhishekcpp007/policy-claims-api">policy-claims-api</a> is an insurance back office built with FastAPI, PostgreSQL and Redis. Agents write policies and file claims, assessors decide them, admins see everything.</p>
+  <ul>
+    <li>JWT authentication with three roles. A record the caller cannot read returns 404 rather than 403, so the API never confirms that someone else's policy exists, and the role is re-checked against the database row on every request instead of being trusted from the token.</li>
+    <li>The money rules are the point: approved claims cannot add up past the sum insured even when each one is individually valid, a rejection frees its cover again, and a claim cannot be decided twice. Amounts are stored in paise as integers, never floats.</li>
+    <li>Claim filing takes an <code>Idempotency-Key</code>, so a retried request returns the claim it already created and two racing retries resolve to one. Redis caches reads and degrades to a cache miss when it is down rather than failing the request.</li>
+    <li>35 tests at 93% line coverage, running on SQLite so CI needs no services. GitHub Actions runs ruff, the suite, and a job that builds the image, boots the container and curls the health endpoint.</li>
   </ul>
 </section>
 
