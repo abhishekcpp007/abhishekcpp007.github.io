@@ -94,6 +94,10 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
   <table>
     <thead><tr><th>Project</th><th>Pull request</th><th>What I fixed</th><th>Status</th></tr></thead>
     <tbody>
+      <tr><td>virtualenv</td><td><a href="https://github.com/pypa/virtualenv/pull/3514">#3514</a></td><td>The csh activator left <code>PYTHONHOME</code> set, so the activated interpreter could not start at all.</td><td class="s m">Merged</td></tr>
+      <tr><td>tox-uv</td><td><a href="https://github.com/tox-dev/tox-uv/pull/418">#418</a></td><td>Changing <code>system_site_packages</code> never recreated the environment, so the setting had no effect either way.</td><td class="s m">Merged</td></tr>
+      <tr><td>tox</td><td><a href="https://github.com/tox-dev/tox/pull/4393">#4393</a></td><td>The same stale-environment gap upstream, in <code>VirtualEnv.python_cache</code>.</td><td class="s o">Open</td></tr>
+      <tr><td>pyproject-api</td><td><a href="https://github.com/tox-dev/pyproject-api/pull/354">#354</a></td><td><code>ensure_empty_dir</code> followed symlinks: a dangling link raised, and a link to a directory emptied its target.</td><td class="s o">Open</td></tr>
       <tr><td>TransformerLens</td><td><a href="https://github.com/TransformerLensOrg/TransformerLens/pull/1965">#1965</a></td><td>Eval helpers hardcoded <code>"cuda"</code>, so they crashed on CPU and Apple MPS machines.</td><td class="s m">Merged</td></tr>
       <tr><td>SAELens</td><td><a href="https://github.com/decoderesearch/SAELens/pull/776">#776</a></td><td>Unseeded calls to <code>random_firing_probabilities</code> returned identical values every time.</td><td class="s m">Merged</td></tr>
       <tr><td>nnsight</td><td><a href="https://github.com/ndif-team/nnsight/pull/800">#800</a></td><td>Batched <code>.skip()</code> lost the output's container type, breaking namedtuple and ModelOutput results.</td><td class="s m">Merged</td></tr>
