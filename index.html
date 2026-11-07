@@ -119,6 +119,9 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>MO-Gymnasium</td><td><a href="https://github.com/Farama-Foundation/MO-Gymnasium/pull/172">#172</a></td><td><code>breakable-bottles</code> returned rewards and observations outside its declared spaces.</td><td class="s o">In review</td></tr>
       <tr><td>more-itertools</td><td><a href="https://github.com/more-itertools/more-itertools/pull/1346">#1346</a></td><td>Type stubs for <code>concurrent_tee</code> and <code>serialize</code> disagreed with the runtime code.</td><td class="s o">In review</td></tr>
       <tr><td>EleutherAI sparsify</td><td><a href="https://github.com/EleutherAI/sparsify/pull/146">#146</a></td><td><code>isnumeric()</code> turned <code>-5</code> into a float and crashed on Unicode numerals.</td><td class="s o">In review</td></tr>
+      <tr><td>iniconfig (pytest)</td><td><a href="https://github.com/pytest-dev/iniconfig/pull/89">#89</a></td><td><code>str.splitlines()</code> also split on form feeds and Unicode separators, breaking values and shifting reported line numbers.</td><td class="s o">In review</td></tr>
+      <tr><td>pytest-mock</td><td><a href="https://github.com/pytest-dev/pytest-mock/pull/661">#661</a></td><td><code>mocker.spy()</code> on an inherited classmethod or staticmethod raised <code>TypeError</code> when called through an instance.</td><td class="s o">In review</td></tr>
+      <tr><td>pytest-randomly</td><td><a href="https://github.com/pytest-dev/pytest-randomly/pull/755">#755</a></td><td>With xdist, <code>--randomly-seed=last --cache-clear</code> gave every worker its own seed and crashed collection.</td><td class="s o">In review</td></tr>
     </tbody>
   </table>
   </div>
