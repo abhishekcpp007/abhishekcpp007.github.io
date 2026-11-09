@@ -123,6 +123,8 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>EleutherAI sparsify</td><td><a href="https://github.com/EleutherAI/sparsify/pull/146">#146</a></td><td><code>isnumeric()</code> turned <code>-5</code> into a float and crashed on Unicode numerals.</td><td class="s o">In review</td></tr>
       <tr><td>iniconfig (pytest)</td><td><a href="https://github.com/pytest-dev/iniconfig/pull/89">#89</a></td><td><code>str.splitlines()</code> also split on form feeds and Unicode separators, breaking values and shifting reported line numbers.</td><td class="s o">In review</td></tr>
       <tr><td>pytest-mock</td><td><a href="https://github.com/pytest-dev/pytest-mock/pull/661">#661</a></td><td><code>mocker.spy()</code> on an inherited classmethod or staticmethod raised <code>TypeError</code> when called through an instance.</td><td class="s o">In review</td></tr>
+      <tr><td>sphinx-autodoc-typehints</td><td><a href="https://github.com/tox-dev/sphinx-autodoc-typehints/pull/1124">#1124</a></td><td>A parameter named <code>lambda_</code> lost the type its docstring gave it, because only the <code>:param</code> line was renamed and not its <code>:type</code> twin.</td><td class="s o">Open</td></tr>
+      <tr><td>pipdeptree</td><td><a href="https://github.com/tox-dev/pipdeptree/pull/882">#882</a></td><td>Graphviz output with <code>--reverse --depth</code> ignored the depth limit below a missing requirement and drew unlabeled nodes.</td><td class="s o">Open</td></tr>
     </tbody>
   </table>
   </div>
