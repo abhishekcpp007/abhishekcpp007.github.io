@@ -106,6 +106,7 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>filelock</td><td><a href="https://github.com/tox-dev/filelock/pull/908">#908</a></td><td>Read-write locks took <code>blocking=0</code> as blocking and waited the full timeout.</td><td class="s m">Merged</td></tr>
       <tr><td>platformdirs</td><td><a href="https://github.com/tox-dev/platformdirs/pull/686">#686</a></td><td>Media and fonts functions couldn't take <code>use_site_for_root</code> like their properties.</td><td class="s m">Merged</td></tr>
       <tr><td>TransformerLens</td><td><a href="https://github.com/TransformerLensOrg/TransformerLens/pull/1976">#1976</a></td><td><code>stack_head_results</code> silently returned the wrong residual stream for a negative layer.</td><td class="s m">Merged</td></tr>
+      <tr><td>pytest-randomly</td><td><a href="https://github.com/pytest-dev/pytest-randomly/pull/755">#755</a></td><td>With xdist, <code>--randomly-seed=last --cache-clear</code> gave every worker its own seed and crashed collection.</td><td class="s m">Merged</td></tr>
       <tr><td>Hugging Face lighteval</td><td><a href="https://github.com/huggingface/lighteval/pull/1465">#1465</a></td><td>The LiveCodeBench sandbox's fake stdout had no binary buffer, so correct solutions were graded wrong.</td><td class="s o">In review</td></tr>
       <tr><td>SWE-bench</td><td><a href="https://github.com/SWE-bench/SWE-bench/pull/711">#711</a></td><td>A bare <code>FAIL:</code> line crashed the Django log parser and killed grading for that instance.</td><td class="s o">In review</td></tr>
       <tr><td>Gymnasium</td><td><a href="https://github.com/Farama-Foundation/Gymnasium/pull/1827">#1827</a></td><td><code>MaxAndSkipObservation</code> returned the previous step's frames when an episode ended mid-skip.</td><td class="s o">In review</td></tr>
@@ -122,7 +123,6 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>EleutherAI sparsify</td><td><a href="https://github.com/EleutherAI/sparsify/pull/146">#146</a></td><td><code>isnumeric()</code> turned <code>-5</code> into a float and crashed on Unicode numerals.</td><td class="s o">In review</td></tr>
       <tr><td>iniconfig (pytest)</td><td><a href="https://github.com/pytest-dev/iniconfig/pull/89">#89</a></td><td><code>str.splitlines()</code> also split on form feeds and Unicode separators, breaking values and shifting reported line numbers.</td><td class="s o">In review</td></tr>
       <tr><td>pytest-mock</td><td><a href="https://github.com/pytest-dev/pytest-mock/pull/661">#661</a></td><td><code>mocker.spy()</code> on an inherited classmethod or staticmethod raised <code>TypeError</code> when called through an instance.</td><td class="s o">In review</td></tr>
-      <tr><td>pytest-randomly</td><td><a href="https://github.com/pytest-dev/pytest-randomly/pull/755">#755</a></td><td>With xdist, <code>--randomly-seed=last --cache-clear</code> gave every worker its own seed and crashed collection.</td><td class="s o">In review</td></tr>
     </tbody>
   </table>
   </div>
