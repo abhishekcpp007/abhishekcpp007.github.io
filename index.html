@@ -136,6 +136,9 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>MyST-Parser</td><td><a href="https://github.com/executablebooks/MyST-Parser/pull/1230">#1230</a></td><td>The <code>url_schemes</code> validator used <code>and</code> where it needed <code>or</code>, so bad <code>classes</code> got through and crashed the build later.</td><td class="s o">In review</td></tr>
       <tr><td>pyproject-metadata</td><td><a href="https://github.com/pypa/pyproject-metadata/pull/352">#352</a></td><td><code>License-File</code> leaked the build machine's absolute path into METADATA on metadata 2.4+.</td><td class="s o">In review</td></tr>
       <tr><td>sphinx-autobuild</td><td><a href="https://github.com/sphinx-doc/sphinx-autobuild/pull/218">#218</a></td><td>The live-reload script was spliced into 206 Range responses, corrupting partial downloads.</td><td class="s o">In review</td></tr>
+      <tr><td>flake8-bugbear</td><td><a href="https://github.com/PyCQA/flake8-bugbear/pull/633">#633</a></td><td>B021 (f-string used as a docstring) never ran on <code>async def</code>, so those were silently missed.</td><td class="s o">In review</td></tr>
+      <tr><td>nox</td><td><a href="https://github.com/wntrblm/nox/pull/1234">#1234</a></td><td><code>--report</code> crashed on a <code>Path</code> parametrize value, and under <code>-j</code> passing sessions showed as failed.</td><td class="s o">In review</td></tr>
+      <tr><td>sphinx-design</td><td><a href="https://github.com/executablebooks/sphinx-design/pull/318">#318</a></td><td><code>tab-set-code</code> silently dropped any code block that had a <code>:caption:</code>.</td><td class="s o">In review</td></tr>
     </tbody>
   </table>
   </div>
