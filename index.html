@@ -150,6 +150,10 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>hist</td><td><a href="https://github.com/scikit-hep/hist/pull/766">#766</a></td><td><code>ChunkedHist.to_hist()</code> labelled category axes with their name, so adding it to its source failed.</td><td class="s m">Merged</td></tr>
       <tr><td>pytest-doctestplus</td><td><a href="https://github.com/scientific-python/pytest-doctestplus/pull/328">#328</a></td><td><code>FLOAT_CMP</code> failed on complex numbers like <code>(1.5-2.5j)</code> because <code>-</code> wasn't a separator.</td><td class="s o">In review</td></tr>
       <tr><td>vector</td><td><a href="https://github.com/scikit-hep/vector/pull/763">#763</a></td><td><code>isclose</code> on two rho-phi vectors failed across the &plusmn;&pi; seam.</td><td class="s o">In review</td></tr>
+      <tr><td>pymdown-extensions</td><td><a href="https://github.com/facelessuser/pymdown-extensions/pull/3052">#3052</a></td><td>Quoted keys like <code>++"a\\b"++</code> dropped escaped backslashes, so <code>a\\b</code> rendered as <code>a\b</code>.</td><td class="s o">In review</td></tr>
+      <tr><td>decaylanguage</td><td><a href="https://github.com/scikit-hep/decaylanguage/pull/650">#650</a></td><td>Nested <code>DescriptorFormat</code> blocks restored the wrong format on exit, so the inner one wiped out the outer one.</td><td class="s o">In review</td></tr>
+      <tr><td>bracex</td><td><a href="https://github.com/facelessuser/bracex/pull/64">#64</a></td><td>Ranges whose span overflows int64 were expanded, where Bash 5.3 keeps them literal.</td><td class="s o">In review</td></tr>
+      <tr><td>boost-histogram</td><td><a href="https://github.com/scikit-hep/boost-histogram/pull/1209">#1209</a></td><td>A UHI round trip turned the stored deltas of one-entry Mean bins into NaN, so later fills had NaN variance.</td><td class="s o">In review</td></tr>
     </tbody>
   </table>
   </div>
