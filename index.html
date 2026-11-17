@@ -112,6 +112,11 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>hist</td><td><a href="https://github.com/scikit-hep/hist/pull/766">#766</a></td><td><code>ChunkedHist.to_hist()</code> labelled category axes with their name, so adding it to its source failed.</td><td class="s m">Merged</td></tr>
       <tr><td>bracex</td><td><a href="https://github.com/facelessuser/bracex/pull/64">#64</a></td><td>Ranges whose span overflows int64 were expanded, where Bash 5.3 keeps them literal.</td><td class="s m">Merged</td></tr>
       <tr><td>parse</td><td><a href="https://github.com/r1chardj0n3s/parse/pull/286">#286</a></td><td>The <code>e</code> and <code>g</code> types rejected <code>+nan</code> and <code> inf</code>, which <code>str.format()</code> itself writes.</td><td class="s m">Merged</td></tr>
+      <tr><td>decaylanguage</td><td><a href="https://github.com/scikit-hep/decaylanguage/pull/650">#650</a></td><td><code>DescriptorFormat</code> saved the config when built, so nested <code>with</code> blocks restored the wrong format on exit.</td><td class="s m">Merged</td></tr>
+      <tr><td>backrefs</td><td><a href="https://github.com/facelessuser/backrefs/pull/220">#220</a></td><td>A null escape at the end of a replace template raised <code>PatternError</code> where <code>re</code> returns <code>\x00</code>.</td><td class="s m">Merged</td></tr>
+      <tr><td>nox</td><td><a href="https://github.com/wntrblm/nox/pull/1234">#1234</a></td><td><code>nox --report</code> crashed on a <code>Path</code> parametrize value and left the report file cut off.</td><td class="s m">Merged</td></tr>
+      <tr><td>pymdown-extensions</td><td><a href="https://github.com/facelessuser/pymdown-extensions/pull/3052">#3052</a></td><td>Keys swallowed escaped backslashes in quoted keys, so only the last escaped character survived.</td><td class="s m">Merged</td></tr>
+      <tr><td>OpenEnv</td><td><a href="https://github.com/openenv/OpenEnv/pull/1631">#1631</a></td><td>The FinQA reward cut <code>\boxed{}</code> answers at the first <code>}</code>, so a correct answer with <code>\text{}</code> inside scored 0.</td><td class="s m">Merged</td></tr>
     </tbody>
   </table>
   </div>
