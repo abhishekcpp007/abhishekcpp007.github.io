@@ -122,6 +122,8 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
       <tr><td>sphinx-argparse-cli</td><td><a href="https://github.com/tox-dev/sphinx-argparse-cli/pull/405">#405</a></td><td>Help that already used <code>%(default)s</code> got a second <code>(default: ...)</code> appended.</td><td class="s m">Merged</td></tr>
       <tr><td>pipdeptree</td><td><a href="https://github.com/tox-dev/pipdeptree/pull/882">#882</a></td><td>With <code>--reverse</code> and <code>--depth</code>, Graphviz output put missing requirements at the wrong depth, unlike the text tree.</td><td class="s m">Merged</td></tr>
       <tr><td>sqlacodegen</td><td><a href="https://github.com/agronholm/sqlacodegen/pull/491">#491</a></td><td>A column named <code>registry</code> wasn't renamed like <code>metadata</code>, so generated code warned on import.</td><td class="s m">Merged</td></tr>
+      <tr><td>exceptiongroup</td><td><a href="https://github.com/agronholm/exceptiongroup/pull/169">#169</a></td><td><code>subgroup()</code> and <code>split()</code> didn't check what <code>derive()</code> returned, so a broken override got an <code>AttributeError</code> or no error at all.</td><td class="s m">Merged</td></tr>
+      <tr><td>exceptiongroup</td><td><a href="https://github.com/agronholm/exceptiongroup/pull/170">#170</a></td><td>A class that isn't an exception type, like <code>bool</code>, was used as a predicate and quietly matched everything.</td><td class="s m">Merged</td></tr>
     </tbody>
   </table>
   </div>
